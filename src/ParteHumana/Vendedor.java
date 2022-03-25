@@ -1,5 +1,7 @@
 package ParteHumana;
 
+import Utilidades.Utilidad;
+
 import javax.swing.JOptionPane;
 
 /*
@@ -9,6 +11,7 @@ import javax.swing.JOptionPane;
 public class Vendedor extends Trabajador {
 
     private Cliente cliente;
+    private Utilidad utilidad = new Utilidad();
 
     public Vendedor(String nombre, String documento, String puesto) {
         super(nombre, documento, puesto);
@@ -19,14 +22,9 @@ public class Vendedor extends Trabajador {
     }
 
     public void datosCliente(){
-        String nombre=leerString("Ingrese su nombre");
-        String documento=leerString("Ingrese su documento");
+        String nombre=utilidad.leerString("Ingrese su nombre: ");
+        String documento=utilidad.leerString("Ingrese su documento: ");
         cliente = new Cliente(nombre, documento);
-    }
-
-    //Implementar de mejor forma
-    private String leerString(String msj){
-        return JOptionPane.showInputDialog(msj);
     }
 
     public Cliente getCliente(){

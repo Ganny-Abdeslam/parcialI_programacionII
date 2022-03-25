@@ -1,9 +1,4 @@
-import ParteHumana.Persona;
-import ParteHumana.Trabajador;
 import ParteHumana.Vendedor;
-import Cine.Boleto;
-import ParteHumana.Cliente;
-import Cine.Boleto;
 
 public class App {
     public static void main(String[] args) throws Exception {
