@@ -9,6 +9,11 @@ public class Persona {
         this.documento = documento;
     }
 
+    /*
+    /GETTERS
+    /   &
+    /SETTERS
+    */
     public void setNombre(String nombre){
         this.nombre = nombre;
     }

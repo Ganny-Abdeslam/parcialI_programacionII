@@ -9,6 +9,11 @@ public class Trabajador extends Persona {
         this.puesto = puesto;
     }
 
+    /*
+    /GETTERS
+    /   &
+    /SETTERS
+    */
     public void setPuesto(String puesto){
         this.puesto = puesto;
     }
