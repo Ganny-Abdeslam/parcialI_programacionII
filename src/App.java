@@ -7,9 +7,10 @@ import Cine.Boleto;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Persona aleman = new Cliente("A", "1");
-        Trabajador pablo = new Vendedor("pable", "1000231", "Vende tiquetes");
+        //Persona aleman = new Cliente("A", "1");
+        Vendedor pablo = new Vendedor("pable", "1000231", "Vende tiquetes");
+        pablo.datosCliente();
         //Boleto boleto = new Boleto(aleman, pablo, "Normal");
-        //System.out.println(boleto.getCliente().getNombre() + boleto.configurarTipoBoleto("normal"));
+        System.out.println(pablo.getCliente().getNombre());
     }
 }

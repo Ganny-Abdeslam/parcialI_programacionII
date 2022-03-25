@@ -3,6 +3,11 @@ package Cine;
 import ParteHumana.Persona;
 import ParteHumana.Trabajador;
 
+
+/*Reescribir multiples cosas,
+    -El usuario escoge la silla
+    -El usuario escoge la funcion
+*/    
 public class Boleto {
     
     private Persona cliente;
