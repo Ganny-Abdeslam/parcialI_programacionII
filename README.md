@@ -1,15 +1,15 @@
-### Codigo para la solucion del problema de Taquilleria de un Cine
+# Codigo para la solucion del problema de Taquilleria de un Cine
 ------------------------------------------------------------------
 
 Se implementan 2 Principales Package, los cuales son Cine y ParteHumana.
 
 El Cine contiene todo referente a el, contando con la parte fisica que es:
-    
+```    
 ----Cine    --> Es la entidad de manera general que contiene el todo
 ----Sala    --> Donde se sientan los Clientes, se presentan Las funciones y contiene las Zonas
 ----Zona    --> Donde se encuentran contenidos los Asientos, ya depende de la Zona su cantidad
 ----Asiento --> Es la comprovacion y para saber si un usuario puede obtener un puesto para la funcion
-
+```
 Tambien este contiene otras partes muy importantes que son:
 
 ----Funcion  --> Contiene la hora de presentacion de una Pelicula e informacion sobre una Sala
