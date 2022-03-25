@@ -9,4 +9,9 @@ public class Utilidad {
         System.out.println(msj);
         return sc.nextLine();
     }
+
+    public int leerInt(String msj){
+        System.out.println(msj);
+        return sc.nextInt();
+    }
 }

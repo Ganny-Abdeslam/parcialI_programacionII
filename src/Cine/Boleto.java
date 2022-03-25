@@ -45,9 +45,9 @@ public class Boleto {
     }
 
     /*
-    /GETTERS
-    /   &
-    /SETTERS
+    *GETTERS
+    *   &
+    *SETTERS
     */
     public Persona getCliente(){
         return this.cliente;
@@ -57,6 +57,7 @@ public class Boleto {
 
 enum TipoBoleto{
     VIP(20), Normal(10);
+    
     private int precio;
 
     TipoBoleto(int s){precio=s;}

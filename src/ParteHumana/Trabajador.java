@@ -10,9 +10,9 @@ public class Trabajador extends Persona {
     }
 
     /*
-    /GETTERS
-    /   &
-    /SETTERS
+    *GETTERS
+    *   &
+    *SETTERS
     */
     public void setPuesto(String puesto){
         this.puesto = puesto;
@@ -20,5 +20,8 @@ public class Trabajador extends Persona {
 
     public String getPuesto(){
         return this.puesto;
+    }
+
+    public void datosCliente() {
     }
 }

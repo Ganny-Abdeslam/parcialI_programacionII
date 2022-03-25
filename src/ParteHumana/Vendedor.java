@@ -2,8 +2,6 @@ package ParteHumana;
 
 import Utilidades.Utilidad;
 
-import javax.swing.JOptionPane;
-
 /*
     Deberia ser el que contenga el Cliente por datos personales y elecciones
     para asi que solo el boleto al contener trabajador pueda extraer los multiples objetos
@@ -27,6 +25,11 @@ public class Vendedor extends Trabajador {
         cliente = new Cliente(nombre, documento);
     }
 
+    /*
+    *GETTERS
+    *   &
+    *SETTERS
+    */
     public Cliente getCliente(){
         return this.cliente;
     }
