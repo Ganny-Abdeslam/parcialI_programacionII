@@ -1,4 +1,4 @@
-### Codigo para la solucion del problema de Taquilleria de un Cine
+# Codigo para la solucion del problema de Taquilleria de un Cine
 ------------------------------------------------------------------
 
 Se implementan 2 Principales Package, los cuales son Cine y ParteHumana.
