@@ -1,3 +1,4 @@
+import Cine.Funcion;
 import Cine.Pelicula;
 import ParteHumana.Vendedor;
 
@@ -20,6 +21,9 @@ public class App {
         *Se generan 3 Funciones con las peliculas definidas anteriormente
         *para la prueba de la App
         */
+        Funcion funcion_01 = new Funcion(peliculaAccion, "A01", 60);
+        Funcion funcion_02 = new Funcion(peliculaComedia, "B01", 90);
+        Funcion funcion_03 = new Funcion(peliculaRomance, "A01", 200);
 
         //Persona aleman = new Cliente("A", "1");
         Vendedor pablo = new Vendedor("pable", "1000231", "Vende tiquetes");
