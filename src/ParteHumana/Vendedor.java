@@ -30,7 +30,7 @@ public class Vendedor extends Trabajador {
 
         int asiento = cliente.seleccionarAsiento();
         
-        if(funcion.getSala().getZona(tipoBoleto).getCantAsientos() > asiento){
+        if(funcion.getSala().getZona(tipoBoleto).getCantAsientos() >= asiento){
             if(!funcion.getSala().getZona(tipoBoleto).getAsiento(asiento-1).getOcupado()){
                 funcion.getSala().getZona(tipoBoleto).getAsiento(asiento-1).cambiarEstado();
                 return asiento;
