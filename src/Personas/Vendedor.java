@@ -37,7 +37,7 @@ public class Vendedor extends Trabajador {
             }
         }
 
-        pedirAsiento(funcion, tipoBoleto);
+        asiento = pedirAsiento(funcion, tipoBoleto);
         return asiento;
     }
 
