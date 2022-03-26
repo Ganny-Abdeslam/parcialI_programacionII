@@ -1,7 +1,7 @@
 ### Codigo para la solucion del problema de Taquilleria de un Cine
 ------------------------------------------------------------------
 
-Se implementan 2 Principales Package, los cuales son Cine y ParteHumana.
+Se implementan 2 Principales Package, los cuales son Cine y Personas.
 
 El Cine contiene todo referente a el, contando con la parte fisica que es:
 ```    
@@ -16,7 +16,7 @@ Funcion  --> Contiene la hora de presentacion de una Pelicula e informacion sobr
 Pelicula --> Es una obra que contiene Titulo y Duracion
 Boleto   --> Contiene todos los datos, del Cliente, Funcion y Vendedor
 ```
-Ahora el Package de la ParteHumana contiene:
+Ahora el Package de la Personas contiene:
 ```
 Persona               --> Individuo identificable que implementa DatosPersonales
 Cliente               --> Es una Persona la cual puede elegir un Asiento y una Funcion

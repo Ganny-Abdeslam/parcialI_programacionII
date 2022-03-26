@@ -1,4 +1,4 @@
-package ParteHumana;
+package Personas;
 
 public class Trabajador extends Persona {
 

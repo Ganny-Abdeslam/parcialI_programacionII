@@ -1,4 +1,4 @@
-package ParteHumana;
+package Personas;
 
 import Cine.Funcion;
 

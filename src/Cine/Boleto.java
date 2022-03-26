@@ -1,6 +1,6 @@
 package Cine;
 
-import ParteHumana.Persona;
+import Personas.Persona;
 
 public class Boleto {
     

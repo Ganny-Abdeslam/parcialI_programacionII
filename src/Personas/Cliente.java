@@ -1,4 +1,4 @@
-package ParteHumana;
+package Personas;
 
 public class Cliente extends Persona{
 

@@ -1,7 +1,7 @@
 import Cine.Funcion;
 import Cine.Pelicula;
-import ParteHumana.PersonalMantenimiento;
-import ParteHumana.Vendedor;
+import Personas.PersonalMantenimiento;
+import Personas.Vendedor;
 
 /**
  *Completar FUNCION & completar BOLETO

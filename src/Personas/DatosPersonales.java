@@ -1,4 +1,4 @@
-package ParteHumana;
+package Personas;
 
 interface DatosPersonales {
     abstract void setNombre(String nombre);
