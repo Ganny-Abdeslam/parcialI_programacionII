@@ -2,7 +2,7 @@ package Cine;
 
 import java.util.ArrayList;
 
-//LIQUIDADA
+//LIQUIDADO
 public class Sala {
     private String idSala;
     private ArrayList<Zona> zonas;
