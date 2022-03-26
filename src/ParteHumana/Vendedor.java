@@ -2,8 +2,6 @@ package ParteHumana;
 
 import Cine.Boleto;
 import Cine.Funcion;
-import Utilidades.Utilidad;
-
 /**
  * Deberia ser el que contenga el Cliente por datos personales y elecciones
  * para asi que solo el boleto al contener trabajador pueda extraer los multiples objetos
@@ -12,7 +10,6 @@ public class Vendedor extends Trabajador {
 
     private Cliente cliente;
     private Boleto boleto;
-    private Utilidad utilidad = new Utilidad();
 
     public Vendedor(String nombre, String documento, String puesto) {
         super(nombre, documento, puesto);

@@ -1,5 +1,6 @@
 import Cine.Funcion;
 import Cine.Pelicula;
+import ParteHumana.PersonalMantenimiento;
 import ParteHumana.Vendedor;
 
 /**
@@ -28,7 +29,7 @@ public class App {
         /**
          * Se generan 3 tipos de Vendedores para las pruebas
          */
-        Vendedor pablo = new Vendedor("Pablo AlgunApellido", "1000231", "Vende tiquetes");
+        Vendedor pablo = new Vendedor("Pablo Granjero", "1000231", "Vende tiquetes");
         pablo.datosCliente();
         pablo.generarBoleto(funcion_01);
         pablo.venderBoleto();
@@ -42,5 +43,13 @@ public class App {
         angelica.datosCliente();
         angelica.generarBoleto(funcion_03);
         angelica.venderBoleto();
+
+        /**
+         * Solo se tiene un ejemplo de la clase PersonalMantenimiento, por fines de 
+         * simplicidad y practicos
+         */
+        PersonalMantenimiento albaro = new PersonalMantenimiento("Albaro Martinez", 
+                                                                "99991231", "Personal limpieza");                           
+        albaro.limpiarSala(funcion_02);
     }
 }
