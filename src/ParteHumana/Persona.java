@@ -9,10 +9,10 @@ public class Persona implements DatosPersonales {
         this.documento = documento;
     }
 
-    /*
-    *GETTERS
-    *   &
-    *SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
     @Override
     public void setNombre(String nombre){

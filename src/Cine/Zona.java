@@ -2,7 +2,6 @@ package Cine;
 
 import java.util.ArrayList;
 
-//LIQUIDADO
 public class Zona {
 
     private int cantAsientos;
@@ -35,13 +34,17 @@ public class Zona {
         }
     }
 
-    /*
-    *GETTERS
-    *   &
-    *SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
     public int getCantAsientos(){
         return cantAsientos;
+    }
+
+    public Asiento getAsiento(int posicion){
+        return asientos.get(posicion);
     }
 
     public String getTipoZona(){

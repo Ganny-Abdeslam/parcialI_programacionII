@@ -3,11 +3,11 @@ package Cine;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-//LIQUIDADO
 public class Funcion {
     private Pelicula pelicula;
     private Sala sala;
     private String fechaFinalizacion;
+    private String fechaInicio;
 
     public Funcion(Pelicula pelicula, String idSala, int valorInicio){
         this.pelicula = pelicula;
@@ -16,12 +16,12 @@ public class Funcion {
     }
 
     private void generarHora(int valorInicio){
-        /*
-        *Se genera una variable LocalDateTime para obtener la fecha actual,
-        *para luego se pararla en el Dia y Hora dandole un formato donde luego
-        *le sumaremos la duracion de la pelicula y un valor arbitrario por fines practicos
-        *para asi obtener la finalizacion de esta funcion.
-        *NOTA: Por simplicidad no importa si excede las horas del dia es decir, puede aparecer mas de 24H
+        /**
+         * Se genera una variable LocalDateTime para obtener la fecha actual,
+         * para luego se pararla en el Dia y Hora dandole un formato donde luego
+         * le sumaremos la duracion de la pelicula y un valor arbitrario por fines practicos
+         * para asi obtener la finalizacion de esta funcion.
+         * NOTA: Por simplicidad no importa si excede las horas del dia es decir, puede aparecer mas de 24H
         */
         LocalDateTime myDateObj = LocalDateTime.now();
         
@@ -33,9 +33,12 @@ public class Funcion {
         int formattedMinDate = Integer.parseInt(myDateObj.format(myFormatMinObj));
         String formattedDayDate = myDateObj.format(myFormatDayObj);
 
-        this.fechaFinalizacion = formattedDayDate+ajustarHora(formattedMinDate +
-                                                              pelicula.getDuracion() +
-                                                              valorInicio, formattedHourDate);
+        this.fechaInicio = formattedDayDate+ " " + ajustarHora(formattedMinDate +
+                                                                valorInicio, formattedHourDate);;
+
+        this.fechaFinalizacion = formattedDayDate+ " " + ajustarHora(formattedMinDate +
+                                                                        pelicula.getDuracion() +
+                                                                        valorInicio, formattedHourDate);
     }
 
     private String ajustarHora(int min, int hora){
@@ -50,10 +53,10 @@ public class Funcion {
         return hora + ":" + min;
     }
 
-    /*
-    *GETTERS
-    *   &
-    *SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
     public Pelicula getPelicula(){
         return this.pelicula;
@@ -65,5 +68,9 @@ public class Funcion {
 
     public String getFechaFinalizacion(){
         return this.fechaFinalizacion;
+    }
+
+    public String getFechaInicio(){
+        return this.fechaInicio;
     }
 }

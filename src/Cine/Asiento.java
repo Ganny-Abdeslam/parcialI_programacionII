@@ -1,6 +1,5 @@
 package Cine;
 
-//LIQUIDADO
 public class Asiento {
     private boolean ocupado = false;
 

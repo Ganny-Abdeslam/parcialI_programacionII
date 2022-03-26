@@ -2,7 +2,6 @@ package Cine;
 
 import java.util.ArrayList;
 
-//LIQUIDADO
 public class Sala {
     private String idSala;
     private ArrayList<Zona> zonas;
@@ -18,10 +17,10 @@ public class Sala {
         asientosTotales = zonas.get(0).getCantAsientos() + zonas.get(1).getCantAsientos();
     }
 
-    /*
-    *GETTERS
-    *   &
-    *SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
     public int getAsientosTotales(){
         return asientosTotales;

@@ -9,10 +9,10 @@ public class Pelicula {
         this.duracion = duracion;
     }
 
-    /*
-    *GETTERS
-    *   &
-    *SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
     public void setNombre(String nombre){
         this.nombre = nombre;
