@@ -1,28 +1,24 @@
 package Cine;
 
 import ParteHumana.Persona;
-import ParteHumana.Trabajador;
 
-
-/*Reescribir multiples cosas,
-    -El usuario escoge la silla
-    -El usuario escoge la funcion
-*/    
 public class Boleto {
     
     private Persona cliente;
-    private Trabajador vendedor;
+    private String idVendedor;
     private Funcion funcion;
-    private Asiento asiento;
+    private int asiento;
+    private double precio;
     private TipoBoleto tipoBoleto;
     
     //Constructor
-    public Boleto(Persona cliente, Trabajador vendedor, Funcion funcion, Asiento asiento,  String tipoBoleto){
+    public Boleto(Persona cliente,String idVendedor, Funcion funcion, int asiento,  String tipoBoleto){
         this.cliente = cliente;
-        this.vendedor = vendedor;
+        this.idVendedor = idVendedor;
         this.funcion = funcion;
-        comprobarAsiento(asiento);
+        this.asiento = asiento;
         configurarTipoBoleto(tipoBoleto);
+        this.precio = this.tipoBoleto.getPrecio();
     }
 
     //Metodo que confirgura el tipo de Boleto que se planteo en una Enumeracion
@@ -38,28 +34,17 @@ public class Boleto {
 
         return  "Se ha cambiado exitosamente a voleto tipo " + tipo;
     }
-
-    private void comprobarAsiento(Asiento asiento){
-        //Completar Funcio-Sala-Zonas-Asientos primero
-        this.asiento = asiento;
+    
+    public String informacionBoleto(){
+        return ("Nombre del Cliente: " + this.cliente.getNombre()
+                + "\nNombre del Vendedor: " + this.idVendedor
+                + "\nTipo de Boleto: " + this.tipoBoleto
+                + "\nPrecio del Boleto: " + this.precio
+                + "\nSala: " + this.funcion.getSala().getIdSala()
+                + "\nNumero Asiento: " + this.asiento
+                + "\nNombre de la Pelicula: " + this.funcion.getPelicula().getNombre()
+                + "\nDuracion de la Pelicula: " + this.funcion.getPelicula().getDuracion()
+                + "\nInicion de la Funcion: " + this.funcion.getFechaInicio()
+                + "\nFinalizacion de la Funcion: " + this.funcion.getFechaFinalizacion());
     }
-
-    /*
-    /GETTERS
-    /   &
-    /SETTERS
-    */
-    public Persona getCliente(){
-        return this.cliente;
-    }
-}
-
-
-enum TipoBoleto{
-    VIP(20), Normal(10);
-    private int precio;
-
-    TipoBoleto(int s){precio=s;}
-
-    int getPrecio(){return precio;}
 }

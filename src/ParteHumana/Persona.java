@@ -1,6 +1,6 @@
 package ParteHumana;
 
-public class Persona {
+public class Persona implements DatosPersonales {
     private String nombre;
     private String documento;
 
@@ -9,23 +9,27 @@ public class Persona {
         this.documento = documento;
     }
 
-    /*
-    /GETTERS
-    /   &
-    /SETTERS
+    /**
+     * GETTERS
+     *    &
+     * SETTERS
     */
+    @Override
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
 
+    @Override
     public String getNombre(){
         return this.nombre;
     }
 
+    @Override
     public void setDocumento(String documento){
         this.documento = documento;
     }
 
+    @Override
     public String getDocumento(){
         return this.documento;
     }
